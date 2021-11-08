@@ -1,3 +1,5 @@
+![License](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
+
 # Team_Profile_Generator
 
 
@@ -32,7 +34,7 @@ Live Application Link 👀 **https://caz1502.github.io/Day-Planner/ **
 
 ## License
 
-  ![License](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
+  ![License](https://opensource.org/licenses/MIT/)
 
 ---
 
