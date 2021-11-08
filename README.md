@@ -34,7 +34,7 @@ Live Application Link 👀 **https://caz1502.github.io/Day-Planner/ **
 
 ## License
 
-  (https://opensource.org/licenses/MIT/)
+  [](https://opensource.org/licenses/MIT/)
 
 ---
 
