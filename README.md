@@ -32,7 +32,7 @@ Live Application Link 👀 **https://caz1502.github.io/Day-Planner/ **
 
 ## License
 
-  ![License](https://img.shields.io/static/v1?label=License&message=MIT&color=blue
+  ![License](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
 
 ---
 
