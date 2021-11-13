@@ -1,0 +1,114 @@
+
+body {
+  height: 100vh;
+  width:100vw;  
+  
+}
+.intro {
+color: #151e3d;
+width: 90%;
+margin-left: auto;
+margin-right:auto;
+font-size:  80px ;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+main {
+  width:90% !important;
+  padding-top: 10px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-left: auto;
+  margin-right: auto;  
+  justify-content: center;
+}
+
+.hero {
+background-image: url(../dist/images/test2.png);
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 8rem;
+width: 100%;
+}
+.card .image{
+  margin-left: 10px;
+  margin-top: 30px;
+  height: 120px;
+  width: 120px;
+  background: grey;
+  /* padding: 3px; */
+  border-radius: 50%;
+}
+
+.hero .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1);
+}
+
+.card  {
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+ margin-right: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #BFBFBF;
+  box-shadow: 10px 10px 5px #aaaaaa; 
+}
+
+.card .name{ 
+  color: #151e3d;
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 30px;
+}
+
+.card .title {
+  color: #6a776c;
+  font-size: 25px;
+  font-weight: 800;
+  margin-left: 30px;
+}
+
+.card .id,
+.email,
+.school,
+.phone
+.github,
+.phone {
+  color: #778899;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+ 
+}
+
+/* @media (max-width:1045px){
+  .container .box{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:710px){
+  .container .box{
+    width: 100%;      
+  }
+}
+
+@media (max-width:710px){
+  .container {
+    width: 90%;        
+  }
+} */
