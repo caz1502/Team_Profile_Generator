@@ -64,11 +64,27 @@ const promptManager = () => {
                     console.log('Your office telephone number should be entered here');
                     return false;
                 }
+
+            }
+
+        },
+        {
+            type: 'list',
+            name: 'profilePic',
+            message: 'Choose the applicable path to display a profile photo.',
+            choices: ['../dist/images/femaleprofile1.png', '../dist/images/femaleprofile2.png', '../dist/images/femaleprofile3.png', '../dist/images/femaleprofile4.png', '../dist/images/maleprofile1.png', '../dist/images/maleprofile2.png', '../dist/images/maleprofile3.png', '../dist/images/maleprofile4.png'],
+            validate: profilePic => {
+                if (profilePic) {
+                    return true;
+                } else {
+                    console.log('Choose the applicable path to display a profile photo.');
+                    return false;
+                }
             }
         },
     ]).then(answers => {
         console.log(answers);
-        const manager = new Manager(answers.name, answers.employeeID, answers.email, answers.officeNumber);
+        const manager = new Manager(answers.name, answers.employeeID, answers.email, answers.officeNumber, answers.profilePic);
         teamMembers.push(manager);
         promptMenu();
     })
@@ -148,10 +164,24 @@ const promptMenu = () => {
                     return false;
                 }
             }
-        }
+        },
+        {
+            type: 'list',
+            name: 'profilePic',
+            message: 'Choose the applicable path to display a profile photo.',
+            choices: ['../dist/images/femaleprofile1.png', '../dist/images/femaleprofile2.png', '../dist/images/femaleprofile3.png', '../dist/images/femaleprofile4.png', '../dist/images/maleprofile1.png', '../dist/images/maleprofile2.png', '../dist/images/maleprofile3.png', '../dist/images/maleprofile4.png'],
+            validate: profilePic => {
+                if (profilePic) {
+                    return true;
+                } else {
+                    console.log('Choose the applicable path to display a profile photo.');
+                    return false;
+                }
+            }
+        },
     ]).then(answers => {
         console.log(answers);
-        const engineer = new Engineer(answers.name, answers.employeeID, answers.email, answers.github);
+        const engineer = new Engineer(answers.name, answers.employeeID, answers.email, answers.github, answers.profilePic);
         teamMembers.push(engineer);
         promptMenu();
     })
@@ -212,9 +242,24 @@ const promptIntern = () => {
                 }
             }
         },
+        {
+            type: 'list',
+            name: 'profilePic',
+            message: 'Choose the applicable path to display a profile photo.',
+            choices: ['../dist/images/femaleprofile1.png', '../dist/images/femaleprofile2.png', '../dist/images/femaleprofile3.png', '../dist/images/femaleprofile4.png', '../dist/images/maleprofile1.png', '../dist/images/maleprofile2.png', '../dist/images/maleprofile3.png', '../dist/images/maleprofile4.png'],
+            validate: profilePic => {
+                if (profilePic) {
+                    return true;
+                } else {
+                    console.log('Choose the applicable path to display a profile photo.');
+                    return false;
+                }
+            }
+        },
+
     ]).then(answers => {
         console.log(answers);
-        const intern = new Intern(answers.name, answers.employeeID, answers.email, answers.school);
+        const intern = new Intern(answers.name, answers.employeeID, answers.email, answers.school, answers.profilePic);
         teamMembers.push(intern);
         promptMenu();
     })
@@ -223,11 +268,11 @@ const promptIntern = () => {
 const buildTeam = () => {
     console.log('Finished with the Team Build !');
 
-    if(!fs.existsSync(OUTPUT_DIR)) {
+    if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR)
     }
-    fs.writeFileSync(outputPath,generateSite(teamMembers));
+    fs.writeFileSync(outputPath, generateSite(teamMembers));
 }
 
-promptManager ();
+promptManager();
 

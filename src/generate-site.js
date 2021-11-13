@@ -10,15 +10,15 @@ const generateTeam = (team) => {
         <div class="card" style="width: 25rem;">            
             <div class="hero">
                 <div class="image">
-                    <img src="../dist/images/Profile161x161.png">
+                    <img src="${manager.profilePic}">
                     </div>
             </div>
                 <br>
-                    <div id="manager" class="name">${manager.name}</div>
-                    <div id="manager" class="title">Manager</div>
-                    <div id="manager" class="id">ID:${manager.id}</div>
-                    <div id="manager" class="email">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></div>
-                    <div id="manager" class="phone">Phone ${manager.officeNumber}</div>         
+                    <div class="name">${manager.name}</div>
+                    <div class="title">Manager</div>
+                    <div class="id">ID:${manager.id}</div>
+                    <div class="email">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></div>
+                    <div class="phone">Phone: ${manager.officeNumber}</div>         
         </div>`;
         html.push(managerHtml);
     }
@@ -30,15 +30,15 @@ const generateTeam = (team) => {
         <div class="card" style="width: 25rem;">  
             <div class="hero">
                 <div class="image">
-                    <img src="../dist/images/Profile161x161.png">
+                    <img src="${engineer.profilePic}">
                 </div>
             </div>
                 <br>
-                    <div id="engineer" class="name"> ${engineer.name} </div>
-                    <div id="engineer" class="title">Engineer</div>
-                    <div id="engineer" class="id">ID:${engineer.id}</div>
-                    <div id="engineer" class="email">Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></div>
-                    <div id="engineer" class="github">Username: <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a> </div>                       
+                    <div class="name"> ${engineer.name} </div>
+                    <div class="title">Engineer</div>
+                    <div class="id">ID:${engineer.id}</div>
+                    <div class="email">Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></div>
+                    <div class="github">Username: <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a> </div>                       
         </div>`;
 
         html.push(engineerHtml);
@@ -51,15 +51,15 @@ const generateTeam = (team) => {
         <div class="card" style="width: 25rem;">        
             <div id ="intern" class="hero">
                 <div class="image">
-                    <img src="../dist/images/Profile161x161.png">
+                    <img src="${intern.profilePic}">
                 </div>    
             </div>         
                 <br>
-                    <div id="intern" class="name">${intern.name} </div>
-                    <div id="intern" class="title">Intern</div>
-                    <div id="intern" class="id">ID:${intern.id}</div>
-                    <div id="intern" class="email">Email: <span id="email"><a href="mailto:${intern.email}">${intern.email}</a></span></div>
-                    <div id="intern" class="school">School: ${intern.school}</div>                        
+                    <div class="name">${intern.name} </div>
+                    <div class="title">Intern</div>
+                    <div class="id">ID:${intern.id}</div>
+                    <div class="email">Email: <span id="email"><a href="mailto:${intern.email}">${intern.email}</a></span></div>
+                    <div class="school">School: ${intern.school}</div>                        
         </div>`;
         html.push(internHtml);
     }
@@ -100,7 +100,10 @@ module.exports = team => {
 <!-- team-->
 <div class="intro">Our Team
     <hr>
+        <br>
+            <br>
 </div>
+
 
     <main> ${generateTeam(team)} </main>
      
