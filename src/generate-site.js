@@ -7,7 +7,7 @@ const generateTeam = (team) => {
     const generateManager = manager => {
         console.log(manager);
         let managerHtml = `  
-        <div class="card" style="width: 25rem;">            
+        <div class="card" style="width: 27rem;">            
             <div class="hero">
                 <div class="image">
                     <img src="${manager.profilePic}">
@@ -15,10 +15,10 @@ const generateTeam = (team) => {
             </div>
                 <br>
                     <div class="name">${manager.name}</div>
-                    <div class="title">Manager</div>
-                    <div class="id">ID:${manager.id}</div>
+                    <div class="title">Manager</div>                    
                     <div class="email">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></div>
-                    <div class="phone">Phone: ${manager.officeNumber}</div>         
+                    <div class="phone">Phone: ${manager.officeNumber}</div>   
+                    <div class="id">ID:${manager.id}</div>      
         </div>`;
         html.push(managerHtml);
     }
@@ -27,7 +27,7 @@ const generateTeam = (team) => {
     const generateEngineer = engineer => {
         console.log(engineer);
         let engineerHtml = ` 
-        <div class="card" style="width: 25rem;">  
+        <div class="card" style="width: 27rem;">  
             <div class="hero">
                 <div class="image">
                     <img src="${engineer.profilePic}">
@@ -35,10 +35,10 @@ const generateTeam = (team) => {
             </div>
                 <br>
                     <div class="name"> ${engineer.name} </div>
-                    <div class="title">Engineer</div>
-                    <div class="id">ID:${engineer.id}</div>
+                    <div class="title">Engineer</div>                   
                     <div class="email">Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></div>
-                    <div class="github">Username: <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a> </div>                       
+                    <div class="github">Username: <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a> </div>     
+                    <div class="id">ID:${engineer.id}</div>                  
         </div>`;
 
         html.push(engineerHtml);
@@ -48,7 +48,7 @@ const generateTeam = (team) => {
     const generateIntern = intern => {
         console.log(intern);
         let internHtml = ` 
-        <div class="card" style="width: 25rem;">        
+        <div class="card" style="width: 27rem;">        
             <div id ="intern" class="hero">
                 <div class="image">
                     <img src="${intern.profilePic}">
@@ -57,9 +57,9 @@ const generateTeam = (team) => {
                 <br>
                     <div class="name">${intern.name} </div>
                     <div class="title">Intern</div>
-                    <div class="id">ID:${intern.id}</div>
                     <div class="email">Email: <span id="email"><a href="mailto:${intern.email}">${intern.email}</a></span></div>
-                    <div class="school">School: ${intern.school}</div>                        
+                    <div class="school">School: ${intern.school}</div>    
+                    <div class="id">ID:${intern.id}</div>                    
         </div>`;
         html.push(internHtml);
     }
@@ -99,9 +99,9 @@ module.exports = team => {
 <body>
 <!-- team-->
 <div class="intro">Our Team
-    <hr>
-        <br>
-            <br>
+<br>
+    <hr>       
+            
 </div>
 
 

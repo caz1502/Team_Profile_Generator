@@ -32,7 +32,7 @@ hr {
 }
 
 main {
-  width:90% !important;
+  width:80% !important;
   padding-top: 10px;
   display: flex !important;
   flex-wrap: wrap !important;
@@ -101,7 +101,7 @@ border-top-right-radius:  10px !important;
   margin-left: 30px;
 }
 
-.card .id,
+.card 
 .email,
 .school,
 .phone,
@@ -111,6 +111,15 @@ border-top-right-radius:  10px !important;
   font-size: 18px;
   font-weight: 700;
   margin-left: 30px;
+
+}
+
+.id {
+  color: #778899;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 10px;
+  text-align: right;
 }
 
 a {
