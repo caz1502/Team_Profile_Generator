@@ -1,29 +1,31 @@
 {
-  "name": "Team_Profile_Generator",
+  "name": "team_profile_generator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
+  "description": "![License](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/caz1502/Team_Profile_Generator.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+
+  "keywords": [
+    "node.js"
+  ], 
+  "author": "Carol Shiers",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/caz1502/Team_Profile_Generator/issues"
   },
-  "homepage": "https://github.com/caz1502/Team_Profile_Generator#readme",
+  "homepage": "https://github.com/caz1502/Team_Profile_Generator#readme",  
   "dependencies": {
     "inquirer": "^8.2.0",
-    "jest": "^27.3.1",
-    "stack": "^0.1.0"
+    "jest": "^27.3.1"
   }
+
 }
+
+  
