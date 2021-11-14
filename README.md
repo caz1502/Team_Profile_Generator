@@ -62,23 +62,17 @@ THEN I exit the application, and the HTML is generated
 ## Images / Video
 
 
-Unit testing -Youtube link
-
 [Tests Video](https://www.youtube.com/watch?v=04SrdviitR0)
 
-
-Using the application -Youtube link
 
 [Using the application Video](https://www.youtube.com/watch?v=stgZ8oZj7vc)
 
 
 Fail and Pass Test Image
-
 ![Tests Image](./dist/images/tests.png)
 
 
 Team Profile Image
-
 ![Team Profile Image](./dist/images/OurTeam.PNG)
 
 
