@@ -64,22 +64,22 @@ THEN I exit the application, and the HTML is generated
 
 Unit testing -Youtube link
 
-[Video](https://www.youtube.com/watch?v=04SrdviitR0)
+[Application Video](https://www.youtube.com/watch?v=04SrdviitR0)
 
 
 Using the application -Youtube link
 
-[Video](https://www.youtube.com/watch?v=stgZ8oZj7vc)
+[Tests Video](https://www.youtube.com/watch?v=stgZ8oZj7vc)
 
 
 Fail and Pass Test Image
 
-[Tests Image](./dist/images/tests.png)
+![Tests Image](./dist/images/tests.png)
 
 
 Team Profile Image
 
-[Team Profile Image](./dist/images/OurTeam.PNG)
+![Team Profile Image](./dist/images/OurTeam.PNG)
 
 
 ---
