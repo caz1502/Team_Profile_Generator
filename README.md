@@ -64,12 +64,12 @@ THEN I exit the application, and the HTML is generated
 
 Unit testing -Youtube link
 
-[Application Video](https://www.youtube.com/watch?v=04SrdviitR0)
+[Tests Video](https://www.youtube.com/watch?v=04SrdviitR0)
 
 
 Using the application -Youtube link
 
-[Tests Video](https://www.youtube.com/watch?v=stgZ8oZj7vc)
+[Using the application Video](https://www.youtube.com/watch?v=stgZ8oZj7vc)
 
 
 Fail and Pass Test Image
